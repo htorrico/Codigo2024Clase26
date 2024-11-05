@@ -44,25 +44,32 @@ void ClonarError()
 
 
 
-Persona persona = new Persona("Hugo", "Torrico");
+Persona persona = new Persona("Hugo", "Torrico","","",36);
 Console.WriteLine(persona.Nombres + " " + persona.Apellidos);
 
-
-
-Persona persona1 = persona.ManualClone();
+Persona persona1 = persona.ClonarManual();
 Console.WriteLine(persona1.Nombres + " " + persona1.Apellidos);
+
+
+Persona persona2 = persona.Clonar();
+Console.WriteLine(persona2.Nombres + " " + persona2.Apellidos);
+
+
+Persona persona3 = (Persona)persona.MemberwiseClone();
+
 
 Console.WriteLine("===========================================");
 
 persona1.Apellidos = "Marquez";
 persona1.Nombres = "Felipe";
 
-
+persona2.Apellidos = "xxxx";
+persona2.Nombres = "yyyyy";
 
 
 Console.WriteLine(persona.Nombres + " " + persona.Apellidos);
 Console.WriteLine(persona1.Nombres + " " + persona1.Apellidos);
-
+Console.WriteLine(persona2.Nombres + " " + persona2.Apellidos);
 
 
 Console.Read();
