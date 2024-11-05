@@ -55,7 +55,7 @@ Persona persona2 = persona.Clonar();
 Console.WriteLine(persona2.Nombres + " " + persona2.Apellidos);
 
 
-Persona persona3 = (Persona)persona.MemberwiseClone();
+
 
 
 Console.WriteLine("===========================================");
