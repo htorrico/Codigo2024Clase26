@@ -104,73 +104,10 @@ void PruebaSingleton3()
     logger33.Log("Inicio de la aplicación.");
 }
 
-PruebaSingleton1();
-PruebaSingleton2();
-PruebaSingleton3();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//ClonarError();
-
-
-//Logger logger1 = new Logger();
-//logger1.Log("Inicio de la aplicación.");
-
-//Logger logger2 = new Logger();
-//logger2.Log("Otra operación en la aplicación.");
-
-
-//Logger logger3 = new Logger();
-//logger2.Log("Otra operación en la aplicación.");
-
-
-//Logger logger4 = new Logger();
-//logger2.Log("Otra operación en la aplicación.");
-
-//Logger logger5 = new Logger();
-//logger2.Log("Otra operación en la aplicación.");
-
-//// Las instancias son diferentes, lo que significa que podría haber inconsistencias si se usan múltiples instancias.
-//Console.WriteLine(ReferenceEquals(logger1, logger2)); // Imprime "False"
-
-
-
-//Logger logger11 = Logger.Instance;
-//logger11.Log("Inicio de la aplicación.");
-
-//Logger logger22 = Logger.Instance;
-//logger22.Log("Otra operación en la aplicación.");
-
-
-//Logger logger33 = Logger.Instance;
-//logger33.Log("Otra operación en la aplicación.");
-
-
-
-//Logger logger1 = new Logger();
-//logger1.Log("Inicio de la aplicación.");
-
-//logger1.Log("Otra operación en la aplicación.");
-
-//logger1.Log("Otra operación en la aplicación.");
-
-
-
-
-
-
+ProxyServidor proxy = new ProxyServidor();
+proxy.ProcesarSolicitudPermiso("usuario");
+proxy.ProcesarSolicitudPermiso("administrador");
 
 
 Console.Read();
